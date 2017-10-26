@@ -1,0 +1,13 @@
+name: hello-world
+clusters:
+  hello-world:
+    services:
+      breed:
+        name: hello-world
+        deployable: julienstroheker/web-debug
+        ports:
+          webport: 80/http
+      scale:
+        cpu: 0.5       
+        memory: 512MB
+        instances: 1

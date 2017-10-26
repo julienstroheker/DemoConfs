@@ -1,0 +1,11 @@
+name: hello-world
+kind: gateway
+internal: false
+deployed: true
+port: 40111/http
+sticky: null
+virtual_hosts:
+- hello-world.julien.work
+routes:
+  hello-world/hello-world/hello-world/webport:
+    weight: 100%

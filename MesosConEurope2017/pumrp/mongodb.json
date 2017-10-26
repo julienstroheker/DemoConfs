@@ -1,0 +1,21 @@
+{
+  "id": "/pumrpdatabase/pumrpdatabase",
+  "instances": 1,
+  "cpus": 0.2,
+  "mem": 1024,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "partsunlimitedmrp/database",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "hostPort": 27017,
+          "containerPort": 27017,
+          "servicePort": 10000
+        }
+      ],
+      "forcePullImage": true
+    }
+  }
+}
