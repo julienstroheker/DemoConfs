@@ -121,3 +121,15 @@ Deploy `mongodb.json` from the DC/OS Dashboard.
 ## Custom DNS
 
 This demo is using my custom DNS `julien.work`, if you want to setup your own, you have to fork the PUMRP repository, Clients and OrderAPI, and change the `updategw100.yaml` and `updategw50.yaml` files with your own DNS under the `virtual_hosts` section.
+
+
+## Add / Remove Catalog feature in the API
+
+You can comment and un-comment the totality of this file to add / remove a route in the API : [https://github.com/PartsUnlimitedMRP/OrderAPI/blob/master/src/src/main/java/smpl/ordering/controllers/CatalogController.java](https://github.com/PartsUnlimitedMRP/OrderAPI/blob/master/src/src/main/java/smpl/ordering/controllers/CatalogController.java)
+
+## Add / Remove Catalog view in the web
+
+You can comment and un-comment the line 45 of this file to add / remove the catalog button in the view  : [https://github.com/PartsUnlimitedMRP/Clients/blob/master/src/Web/index.html](https://github.com/PartsUnlimitedMRP/Clients/blob/master/src/Web/index.html)
+
+You can comment and un-comment the section from line 49 to 56 of this file to add / remove the catalog button in the view  : [https://github.com/PartsUnlimitedMRP/Clients/blob/master/src/Web/pages/main/main.html](https://github.com/PartsUnlimitedMRP/Clients/blob/master/src/Web/pages/main/main.html)
+
